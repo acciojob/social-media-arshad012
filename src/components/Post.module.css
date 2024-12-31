@@ -1,0 +1,15 @@
+
+.post {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    padding-inline: 20px;
+    box-sizing: border-box;
+}
+
+.reaction_section {
+    display: flex;
+    gap: 20px;
+}
