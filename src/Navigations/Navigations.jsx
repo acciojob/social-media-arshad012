@@ -7,26 +7,29 @@ const Navigations = () => {
     const {refreshButtonDisabled, getNotifications} = useContext(RefreshContext);
     
     return (
-        <nav className={styles.navbar}>
-            <ul className={styles.nav_links}>
-                <li>
-                    <button>
-                        <Link to='/'>Posts</Link>
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        <Link to='/users'>Users</Link>
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        <Link to='/notifications'>Notifications</Link>
-                    </button>
-                </li>
-            </ul>
-            <div className={styles.refresh_button}>
-                <button className='button' onClick={getNotifications} disabled={refreshButtonDisabled}>Refresh Notifications</button>
+        <nav className={styles.navbar_main}>
+            <h1>Genz</h1>
+            <div className={styles.navbar}>
+                <ul className={styles.nav_links}>
+                    <li>
+                        <button>
+                            <Link to='/'>Posts</Link>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <Link to='/users'>Users</Link>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <Link to='/notifications'>Notifications</Link>
+                        </button>
+                    </li>
+                </ul>
+                <div className={styles.refresh_button}>
+                    <button className='button' onClick={getNotifications} disabled={refreshButtonDisabled}>Refresh Notifications</button>
+                </div>
             </div>
         </nav>
     )

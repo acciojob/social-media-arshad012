@@ -36,7 +36,7 @@ const Posts = () => {
     }
     
     return (
-        <div className={styles.posts_list}>
+        <div className='posts-list'>
             <CreatePost addNewPost={addNewPost} />
             <div>
                 {
