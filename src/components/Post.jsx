@@ -11,7 +11,7 @@ const Post = ({data, handleClick, buttonText}) => {
     const [eyes, setEyes] = useState(0);
 
     return (
-        <div className={styles.post}>
+        <div className='post'>
             <h2>{body}</h2>
             <p>By user {id}</p>
             <p>{title}</p>
@@ -22,9 +22,9 @@ const Post = ({data, handleClick, buttonText}) => {
                 <button onClick={() => setRocket(rocket + 1)}>🚀 {rocket}</button>
                 <button onClick={() => setEyes(eyes + 1)}>👀 {eyes}</button>
             </div>
-            <Link to={'/posts/'+id}>
-                <button onClick={() => handleClick(id)} style={{marginBlock:'20px'}}>{buttonText}</button>
-            </Link>
+            <button onClick={() => handleClick(id)} style={{marginBlock:'20px'}} className="button">
+                <Link to={'/posts/'+id}>{buttonText}</Link>
+            </button>
         </div>
     )
 }

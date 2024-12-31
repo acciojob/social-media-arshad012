@@ -8,7 +8,7 @@ const Navigations = () => {
     
     return (
         <nav className={styles.navbar_main}>
-            <h1>Genz</h1>
+            <h1>Gen<span>Z</span></h1>
             <div className={styles.navbar}>
                 <ul className={styles.nav_links}>
                     <li>
