@@ -36,11 +36,11 @@ const Posts = () => {
     }
     
     return (
-        <div className='posts-list'>
+        <div>
             <CreatePost addNewPost={addNewPost} />
-            <div>
+            <div className='posts-list'>
                 {
-                    data.map((post) => (<Post key={post.id} data={post} handleClick={handleClick} />))
+                    data.map((post) => (<Post key={post.id} data={post} handleClick={handleClick} buttonText='View Post' />))
                 }
             </div>
         </div>

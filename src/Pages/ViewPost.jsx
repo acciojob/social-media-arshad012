@@ -28,7 +28,7 @@ const ViewPost = () => {
     return (
         <div>
             <h1>View Post</h1>
-            <Post data={post} handleClick={handleClick} />
+            <Post data={post} handleClick={handleClick} buttonText='Edit Post' />
         </div>
     )
 }

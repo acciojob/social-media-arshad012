@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from './Post.module.css';
 import { Link } from "react-router-dom";
 
-const Post = ({data, handleClick}) => {
+const Post = ({data, handleClick, buttonText}) => {
     const {id, title, body} = data;
     const [thumsUp, setThumsUp] = useState(0);
     const [fire, setFire] = useState(0);
@@ -23,7 +23,7 @@ const Post = ({data, handleClick}) => {
                 <button onClick={() => setEyes(eyes + 1)}>👀 {eyes}</button>
             </div>
             <Link to={'/posts/'+id}>
-                <button onClick={() => handleClick(id)} style={{marginBlock:'20px'}}>View Post</button>
+                <button onClick={() => handleClick(id)} style={{marginBlock:'20px'}}>{buttonText}</button>
             </Link>
         </div>
     )
